@@ -4,11 +4,11 @@
 - University Roll No.:1900290210090
 - Branch:EN
 - Section:B
-- Preferred Programming Language: C++/Java/Python
+- Preferred Programming Language:Java/Python
 
 ## Coding Profiles
-- LeetCode: [LALIT_KUMAR]https://leetcode.com/lalit24kumar/
-- HackerRank: [LALIT_KUMAR]https://www.hackerrank.com/lalit_1923en1120
+- LeetCode: lalit24kumar
+- HackerRank: lalit_1923en1120
 
 ## Placement Module
 1. [DS I](https://github.com/lalit24kumar/Pre-Placement-Module-2023/tree/main/DS%20I)
