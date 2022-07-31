@@ -1,0 +1,30 @@
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || p == null || q == null) {
+            return root;
+        }
+        List<TreeNode> listP = new ArrayList<>();
+        List<TreeNode> listQ = new ArrayList<>();
+        findNode(root, p, listP);
+        findNode(root, q, listQ);
+        int size = Math.min(listP.size(), listQ.size());
+        TreeNode parent = root;
+        for (int i = 0; i < size; i++) {
+            if (listP.get(i).val == listQ.get(i).val) {
+                parent = listP.get(i);
+            } else {
+                return parent;
+            }
+        }
+        return parent;
+    }
+    
+    private void findNode(TreeNode node, TreeNode target, List<TreeNode> list) {
+        while (node != null) {
+            list.add(node);
+            if (node.val == target.val) return;
+            if (node.val > target.val) node = node.left;
+            else node = node.right;
+        }
+    }
+}
